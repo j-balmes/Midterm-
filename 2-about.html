@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About - Cats &  Soup</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/7b55396e84.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+body	{
+	background-color: whitesmoke;
+	}
+header	{
+	display: flex;
+	background-color: plum;
+	padding: 15px;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+	color: #ffffff;
+	font-family: Georgia;
+	border: solid rgb(173, 16, 173);
+	border-width: 5px 5px 0px 5px;
+	text-shadow: 4px 4px #5d8074;
+	border-radius: 100px 100px 0px 0px;
+	display: flex;
+	}
+nav	{
+	overflow: hidden;
+	background-color:rgb(176, 50, 176);
+	}
+nav a	{
+	float: left;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	text-decoration: none;
+	font-family: Poppins, sans-serif;
+	}
+.dropdown, .bgm {
+	float: right;
+	overflow: hidden;
+	}
+.dropbtn, .play {
+	font-size: 16px;  
+	outline: none;
+	border: none;
+ 	color: white;
+	padding: 20px;
+	background-color: inherit;
+	font-family: Poppins, sans-serif;
+	margin: 0;
+	}
+nav a:hover, .dropbtn:hover, .play:hover {
+	background-color: #ffffff;
+	color: purple;
+	}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(146, 72, 146);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+.dropdown-content a {
+	float: none;
+	color: #ffffff;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	}
+.dropdown-content a:hover {
+	background-color:rgb(167, 74, 167);
+	color: #ffffff;
+	}
+.dropdown:hover .dropdown-content {
+	display: block;
+	}
+.row	{
+	display: flex;
+	color: #ffffff;
+	font-family: Georgia;
+	text-align: center;
+	border: 5px solid rgb(205, 98, 205);
+	margin: 20px 0px 20px 0px;
+	}
+.column1 {
+	flex: 33.33%;
+	padding: 20px;
+	background-color:rgb(203, 113, 203); 
+	}
+.column2 {
+	flex: 33.33%;
+	padding: 20px;
+	background-color: rgb(203, 113, 203);
+	}
+.column3 {
+	flex: 33.33%;
+	padding: 20px;	
+	background-color: rgb(203, 113, 203);	
+	}
+p, ul	{
+	font-family: Poppins, sans-serif;
+	text-align: justify;
+	font-size: 15px;
+	}
+#contact td	{
+	font-family: Poppins, sans-serif;
+	text-align: left;
+	font-size: 15px;
+	padding: 12px;
+	width: 100%;
+	background-color: rgb(186, 80, 186);
+	color: #ffffff;
+	border-collapse: collapse;
+	border: 1px solid #5d8078;
+	}
+.tdlink:link, .tdlink:visited {
+	color: #ffffff;
+	}
+.tdlink:hover {
+	color:purple;
+	}
+.tdlink:active {
+	color: #023020;
+	}
+.images {
+	width: 100%;
+	border: 3px dotted purple;
+	border-radius: 10px;
+	}
+.footer	{
+	background-color: plum;
+	padding: 15px;
+	border-radius: 0px 0px 100px 100px;
+	}
+.footer p {
+	text-align: center;
+	color: #ffffff;
+	font-family: Poppins, sans serif;
+	}
+#flink:link, #flink:visited {
+	color: #ffffff;
+	}
+#flink:hover {
+	color: powderblue;
+	}
+#flink:active {
+	color:purple;
+	}
+</style>
+</head>
+
+<body>
+<header id="home">
+	<h1>CATS & SOUP</h1>
+</header>
+<nav>
+	<a href="1-home.html"><i class="fas fa-home" style="padding-right:10px"></i>HOME</a>
+	<a href="#about"><i class="fas fa-info-circle" style="padding-right:10px"></i>ABOUT GAME</a>
+	<a href="3-trailer.html"><i class="fas fa-video" style="padding-right:10px"></i>GAME TRAILER</a>
+	<div class="bgm">
+	<audio id="myAudio" width="100%" height="100%" align="center">
+	<source src="audio.mp4" type="audio/mpeg">
+	</audio>	
+	<button class="play" onclick="playAudio()" type="button">PLAY BGM<i class="fas fa-music" style="padding-left:10px"></i></button>
+	<script>
+		var x = document.getElementById("myAudio"); 
+		function playAudio() { 
+		x.play(); 
+		} 
+		</script>
+	</div>
+	<div class="dropdown">
+	<button class="dropbtn">DOWNLOAD GAME<i class="fas fa-download" style="padding-left:10px"></i></button>
+		<div class="dropdown-content">
+			<a href="https://play.google.com/store/apps/details?id=com.hidea.cat&hl=en&gl=US" target="_blank">Google Play</a>
+			<a href="https://apps.apple.com/ph/app/cats-soup/id1581431235" target="_blank">App Store</a>
+	</div>
+</nav>
+
+<section id="about">
+<div class="row">
+	<div class="column1">
+	<h2>What is Cats & Soup about?</h2>
+	<img class="images" src="cat1.jpg" alt="Cat 1"></img>
+	<br>
+	<p>Cats & Soup is exactly as the name implies!</p>
+	<p style="text-indent: 10%;">It is an exquisite simulation game where the player takes care of cats and assists them in making delicious soup in an ever-growing land. These dishes are sold in exchange for coins which are then used for decorating the cats’ home and developing the cats’ workplace.
+	</p>
+	<p style="text-indent: 10%;">As mundane as it sounds, the game’s simplicity is actually what makes it engaging as it encourages the players to find happiness and pleasure in little things. Just as Isaac Newton said, <i>"Nature is pleased with simplicity."</i> Giving players the opportunity to experience having lovely cats, constant income and custom land, this aesthetically pleasing game is perfect for people who want to take a break from the rigors of life for healing and relaxation.
+	</p>
+	</div>
+	<div class="column2">
+	<h2>Who created Cats & Soup?</h2>
+	<img class="images" src="cat2.jpg" alt="Cat 2"></img>
+	<br>
+	<p style="text-indent: 10%;">The game was developed by HIDEA Co., Ltd., a Korean game developer that has been active since 2016. As of 2021, HIDEA's app count is two. Along with their other app called 'Man or Vampire', Cats & Soup is ranked high within <u>Google Play's Top 100</u> and has been <u>installed by people more than 1 million times</u>.
+	</p>
+	<br>
+	<p style="text-align:left;"><b>Contact Developer</b> <i class="fas fa-phone-square-alt" style="padding-left:5px;"></i></p>
+	<table id="contact">
+		<tr>
+		<td>Website</td>
+		<td><a class="tdlink" href="https://hideacorp.blogspot.com" target="_blank">https://hideacorp.blogspot.com</td>
+		</tr>
+		<tr>
+		<td>Email 1</td>
+		<td><a class="tdlink" href="mailto:hideacorp@gmail.com" target="_blank">hideacorp@gmail.com</td>
+		</tr>
+		<tr>
+		<td>Email 2</td>
+		<td><a class="tdlink" href="mailto:support@hideaent.com" target="_blank">support@hideaent.com</td>
+		</tr>
+	</table>
+	<br><br>
+	</div>
+	<div class="column3">
+	<h2>Why play Cats and Soup?</h2>
+	<img class="images" src="cat3.jpg" alt="Cat 3"></img>
+	<br>
+	<p>The game offers the following:</p>
+	<ul>
+		<li>hand-drawn graphics;</li>
+		<li>soothing background music and sfx;</li>
+		<li>easy-to-understand mechanics;</li>
+		<li>and manageable quests.</li>
+	</ul>
+	<p>Moreover, the game is also very user-friendly! <i class='far fa-smile'></i></p>
+	<p style="text-indent: 10%;">Unlike other games that can be quite stressful and exhausting due to level scalings and competition, Cats & Soup is both <em>low maintenance</em> and <em>counter-addictive</em>. It can be played without spending hours on end and does not require the player to turn on their “addict” mode. After all, even if it takes the players two or more days to open the app again, the little cats will remain cute and well, waiting for their owner to take care of them.
+	</p>
+	</div>
+</div>
+</section>
+
+<section id="footer">
+<div class="footer">
+	<p>Website created by Joann Balmes of IT 3104</p>
+	<p><a id="flink" href="mailto:21-00791@g.batstate-u.edu.ph" target="_blank">21-00791@g.batstate-u.edu.ph</a></p>
+</div>
+</section>
+
+</body>
+</html>
